@@ -14,6 +14,24 @@ class Shot:
         self.__batFaceAngle = batFaceAngle
         self.__backliftDirection = backliftDirection
 
+    def get_type(self):
+        return self.__type
+
+    def get_impactSpeed(self):
+        return self.__impactSpeed
+
+    def get_backliftAngle(self):
+        return self.__backliftAngle
+
+    def get_downswingAngle(self):
+        return self.__downswingAngle
+
+    def get_batFaceAngle(self):
+        return self.__batFaceAngle
+
+    def get_backliftDirection(self):
+        return self.__backliftDirection
+
     def __recordShotData(self):
          # Specify the serial port where the sensor is connected
         sensor_port = "/dev/ttyUSB0"  # Change this to match your sensor's port
