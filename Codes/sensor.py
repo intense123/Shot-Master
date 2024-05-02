@@ -1,4 +1,5 @@
 import serial
+from flask import Flask, request
 
 class Sensor:
     def __init__(self):
@@ -20,3 +21,19 @@ class Sensor:
         except Exception as e:
             print(f"Error: {e}")
             return None
+        
+    app = Flask(__name__)
+
+    @app.route('/', methods=['GET'])
+    def receive_data():
+        accelX = request.args.get('AccelX')
+        accelY = request.args.get('AccelY')
+        accelZ = request.args.get('AccelZ')
+    
+        # Process or store the received data as needed
+        print("Received Acceleration Data:")
+        print("AccelX:", accelX)
+        print("AccelY:", accelY)
+        print("AccelZ:", accelZ)
+    
+        return "Data received successfully"
