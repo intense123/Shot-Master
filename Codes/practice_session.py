@@ -53,7 +53,7 @@ class PracticeSession:
         session_summary['maxBackliftAngle'] = 0.0
 
         for shot in self.shots:
-            backliftAngle = shot.get_backlift_angle()
+            backliftAngle = shot.get_backliftAngle()
             session_summary['avgBackliftAngle'] += backliftAngle
             if backliftAngle < session_summary['minBackliftAngle']:
                 session_summary['minBackliftAngle'] = backliftAngle
@@ -70,7 +70,7 @@ class PracticeSession:
         session_summary['maxDownswingAngle'] = 0.0
 
         for shot in self.shots:
-            downswingAngle = shot.get_downswing_angle()
+            downswingAngle = shot.get_downswingAngle()
             session_summary['avgDownswingAngle'] += downswingAngle
             if downswingAngle < session_summary['minDownswingAngle']:
                 session_summary['minDownswingAngle'] = downswingAngle
@@ -87,7 +87,7 @@ class PracticeSession:
         session_summary['maxBatFaceAngle'] = 0.0
 
         for shot in self.shots:
-            batFaceAngle = shot.get_bat_face_angle()
+            batFaceAngle = shot.get_batFaceAngle()
             session_summary['avgBatFaceAngle'] += batFaceAngle
             if batFaceAngle < session_summary['minBatFaceAngle']:
                 session_summary['minBatFaceAngle'] = batFaceAngle
@@ -101,7 +101,7 @@ class PracticeSession:
     def __summarizeBackliftDirection(self, session_summary):
         backlift_direction_counts = {}
         for shot in self.shots:
-            backlift_direction = shot.get_backlift_direction()
+            backlift_direction = shot.get_backliftDirection()
             if backlift_direction in backlift_direction_counts:
                 backlift_direction_counts[backlift_direction] += 1
             else:
