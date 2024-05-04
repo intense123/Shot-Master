@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_socketio import SocketIO, emit
-from pymongo import MongoClient, PyMongo
+from flask_pymongo import PyMongo
+from pymongo import MongoClient
 
 app = Flask(__name__)
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/sensor_data'
