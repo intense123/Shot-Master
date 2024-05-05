@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "518932027590",
+    "project_id": "stancebeam-3abc0",
+    "storage_bucket": "stancebeam-3abc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518932027590:android:46607715b10d5bd3b3dfc7",
+        "android_client_info": {
+          "package_name": "com.stancebeam.stancebeam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ-nG7L3qxZYtcXPv1TcOwgERlx4yygQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
